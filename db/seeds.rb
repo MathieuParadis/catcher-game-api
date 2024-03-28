@@ -7,5 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 10.times do
-	Score.create(player_name: Faker::Name.name, score: rand(100..1000))
+  playerName = Faker::Name.name
+  score = rand(1..25) * 50
+  Score.create(player_name: playerName, score: score)
 end

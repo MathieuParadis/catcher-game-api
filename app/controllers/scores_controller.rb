@@ -1,4 +1,10 @@
+# app/controllers/scores_controller.rb
 class ScoresController < ApplicationController
+  def index
+    scores = Score.all
+    render json: scores
+  end
+  
   def create
     score = Score.new(score_params)
 

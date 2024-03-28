@@ -1,5 +1,5 @@
 # app/controllers/scores_controller.rb
-class ScoresController < ApplicationController
+class Api::ScoresController < ApplicationController
   def index
     scores = Score.all
     render json: scores

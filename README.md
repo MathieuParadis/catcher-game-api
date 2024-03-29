@@ -1,4 +1,4 @@
-# Sea Catch Adventure Backend (Rails)
+# Sea Catch Adventure Backend
 Welcome to the backend repository of Sea Catch Adventure, a catch game and leaderboard web application built with Ruby on Rails.
 
 
@@ -24,14 +24,14 @@ Sea Catch Adventure is a web application designed to provide users with an enter
 
 4. Create, migrate and seed the database
 ```bash
-	rails db:create
-	rails db:migrate
-	rails db:seed
+  rails db:create
+  rails db:migrate
+  rails db:seed
 ```
 
 5. Start the server
 ```bash
-	rails server
+  rails server
 ```
 
 The backend server will now be running at http://localhost:3000
@@ -45,6 +45,7 @@ Deploy this backend to a hosting service like Heroku or AWS for production use.
 * Ruby on Rails
 * PostgreSQL
 
+
 ## Endpoints
 ### `/api/scores`
 #### GET Method
@@ -56,16 +57,16 @@ Deploy this backend to a hosting service like Heroku or AWS for production use.
 - **Response:** JSON array containing score record objects with the player names and scores, ordered by score.
 - **Example Request (fetching top 10 records):**
   ```bash
-  	curl http://localhost:3000/api/scores?limit=10
-	```
+    curl http://localhost:3000/api/scores?limit=10
+  ```
 - **Example Response:**
   ```json
-		[
-			{"id": 1, "playerName": "player1", "score": 1000},
-			{"id": 2, "playerName": "player2", "score": 950},
-			...
-		]
-	```
+    [
+      {"id": 1, "playerName": "player1", "score": 1000},
+      {"id": 2, "playerName": "player2", "score": 950},
+      ...
+    ]
+  ```
 
 #### POST Method
 - **Description:** Submits a new score record.
@@ -73,21 +74,21 @@ Deploy this backend to a hosting service like Heroku or AWS for production use.
 - **Request Type:** POST
 - **Request Body:**
   ```json
-		{
-			{
-				"player_name": "player_name",
-				"score": 1200
-			}
-		}
-	```
+    {
+      {
+        "player_name": "player_name",
+        "score": 1200
+      }
+    }
+  ```
 - **Example Request (fetching top 10 records):**
   ```bash
-		curl -X POST -H "Content-Type: application/json" -d '{"player_name": "player1", "score": 1200}' http://localhost:3000/api/scores
-	```
+    curl -X POST -H "Content-Type: application/json" -d '{"player_name": "player1", "score": 1200}' http://localhost:3000/api/scores
+  ```
 - **Example Response:**
   ```json
-		{"id": 1, "player_name": "player1", "score": 1200}
-	```
+    {"id": 1, "player_name": "player1", "score": 1200}
+  ```
 
 ## Enhancements
 ### Real-Time Score Updates with Action Cable

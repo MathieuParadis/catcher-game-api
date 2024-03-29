@@ -1,7 +1,9 @@
 # app/controllers/scores_controller.rb
 class Api::ScoresController < ApplicationController
   def index
-    scores = Score.all
+    limit = params[:limit].to_i
+    limit = limit.positive? ? limit : 100  # Use the provided limit if it's a positive integer, otherwise default to 100
+    scores = Score.order(score: :desc).limit(limit)
     render json: scores
   end
   

@@ -20,6 +20,6 @@ class Api::ScoresController < ApplicationController
   private
 
   def score_params
-    params.require(:score).permit(:player_name, :score)
+    params.permit(:player_name, :score)
   end
 end

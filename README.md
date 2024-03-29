@@ -5,6 +5,12 @@ Welcome to the backend repository of Sea Catch Adventure, a catch game and leade
 ## Introduction
 Sea Catch Adventure is a web application designed to provide users with an entertaining catch game experience while also allowing them to compete for high scores on a global leaderboard.
 
+## Sea Catch Adventure Frontend
+
+For the frontend interface of Sea Catch Adventure, please refer to the [Sea Catch Adventure Frontend Repository](https://github.com/MathieuParadis/catcher-game).
+
+The frontend repository contains the client-side code built with ReactJS, HTML, CSS, including the catch game interface and leaderboard display.
+
 
 ## Installation and Setup
 1. Clone this repository to your local machine

@@ -97,5 +97,4 @@ Deploy this backend to a hosting service like Heroku or AWS for production use.
   ```
 
 ## Enhancements
-### Real-Time Score Updates with Action Cable
-Implementing real-time score updates using Action Cable can greatly enhance the user experience of Sea Catch Adventure. With Action Cable, users can see live updates of scores as they are submitted by other players, creating a more engaging and interactive gaming environment.
+1. **Real-Time Score Updates with Action Cable:** Implementing real-time score updates using Action Cable can greatly enhance the user experience of Sea Catch Adventure. With Action Cable, users can see live updates of scores as they are submitted by other players, creating a more engaging and interactive gaming environment.
